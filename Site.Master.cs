@@ -14,7 +14,7 @@ namespace TaskManagement
                 if (Session["UserName"] != null)
                 {
                     string userName = Session["UserName"].ToString();
-                    lblUserName.Text = "Welcome, " + userName;
+                    lblUserName.Text =userName;
                 }
                 else
                 {

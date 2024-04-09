@@ -17,6 +17,19 @@
     <!-- Popper.js from a CDN -->
     <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
+    <style>
+
+        .btn-black-text {
+            color: black;
+            background-color: black; /* Set background color to white */
+            border: 1px solid black; /* Add a black border */
+        }
+             .btn-black-text:hover {
+         color: black;
+         background-color: black; /* Set background color to white */
+         border: 1px solid black; /* Add a black border */
+     }
+    </style>
 
 
 
@@ -63,7 +76,7 @@
                             </button>
                             <ul class="dropdown-menu bg-black">
                                 <li class="p-2">
-                                    <asp:LinkButton ID="logoutLink" runat="server" Text="Logout" CssClass="nav-link" OnClick="btnLogout_Click"></asp:LinkButton>
+                                    <asp:LinkButton CausesValidation="false" ID="logoutLink" runat="server" Text="Logout" CssClass="nav-link" OnClick="btnLogout_Click"></asp:LinkButton>
                                 </li>
                                 <%-- <li><a class="dropdown-item" href="#">Another action</a></li>
     <li><a class="dropdown-item" href="#">Something else here</a></li>--%>
